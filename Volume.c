@@ -7,6 +7,11 @@ double volumeOfSphere(double radius) {
 double volumeOfCube(double side) {
     return side * side * side;
 }
+// calculate the volume of cylinder:
+double volumeOfCylinder(double radius, double height) {
+    return 3.14 * radius * radius * height;
+}
+
 int main(){
     double radius;
     printf("Enter the radius of the sphere: ");
@@ -19,5 +24,14 @@ int main(){
     scanf("%lf", &side);
     double cubeVolume = volumeOfCube(side);
     printf("Volume of the cube: %.2lf\n", cubeVolume);
+
+    double cylinderRadius, height;
+    printf("Enter the radius of the cylinder: ");
+    scanf("%lf", &cylinderRadius);  
+    printf("Enter the height of the cylinder: ");
+    scanf("%lf", &height);
+    double cylinderVolume = volumeOfCylinder(cylinderRadius, height);
+    printf("Volume of the cylinder: %.2lf\n", cylinderVolume);
+
     return 0;
 }
