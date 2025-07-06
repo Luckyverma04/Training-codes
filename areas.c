@@ -24,6 +24,10 @@ int areaOfTriangle(int length, int breadth){ // length = base, breadth = height:
     //return (length * breadth) / 2;
     return (length * breadth) / 2;
 }
+// for finding the simple interest:
+int simpleInterest(int principal, int rate, int time){
+    return (principal * rate * time) / 100;
+}
 
 int main(){
     int l,b,area;
@@ -50,6 +54,10 @@ int main(){
 
     int triangleArea = areaOfTriangle(l, b);
     printf("The area of the triangle is: %d\n", triangleArea);
+   
+
+    printf("The simple interest is: %d\n", simpleInterest(1000, 5, 2));
+    
     return 0;
 
 }
