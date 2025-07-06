@@ -28,6 +28,14 @@ int areaOfTriangle(int length, int breadth){ // length = base, breadth = height:
 int simpleInterest(int principal, int rate, int time){
     return (principal * rate * time) / 100;
 }
+// For finding the area of trapezoid:
+int areaOftrapezoid(int a, int b, int height){
+    return ((a + b) * height) / 2;
+}
+// total surface ara of cube:
+int totalSurfaceAreaOfCube(int side){
+    return 6 * side * side;
+}
 
 int main(){
     int l,b,area;
@@ -57,7 +65,8 @@ int main(){
    
 
     printf("The simple interest is: %d\n", simpleInterest(1000, 5, 2));
-    
+    printf("The area of the trapezoid is: %d\n", areaOftrapezoid(5, 10, 4));
+    printf("The total surface area of the cube is: %d\n", totalSurfaceAreaOfCube(3));
     return 0;
 
 }
