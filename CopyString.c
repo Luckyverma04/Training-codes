@@ -9,8 +9,13 @@ void main() {
     printf("Enter a String: ");
     gets(s);  
 
-    reverseStr(s);
-    copyStr(d, s);
+    // reverseStr(s);
+    // copyStr(d, s);
     
-    printf("Copy String = %s\n", d);
+  uprstr(s);
+    printf("Uppercase= %s\n",s);
+    
+      lwrstr(s);
+    printf("lowercase= %s\n",s);
+    // printf("Copy String = %s\n", d);
 }

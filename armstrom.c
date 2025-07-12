@@ -1,6 +1,9 @@
 #include<stdio.h>
 int main() {
     int n, temp, sum = 0, rem;
+    for(int i=0;i<=n;i++){
+        scanf("%d",n);
+    }
     printf("Enter a 3-digit number: ");
     scanf("%d", &n);
 
